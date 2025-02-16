@@ -16,32 +16,3 @@ This repo contains code to crawl images and videos:
 1. **Enviroments**
 	`conda env create -f environment.yml`
 
-### Crawl Images from Google Image Search
-
-Download original (not thumbnails) from Google Images Search with **multi-threading** :D
-1. Get URLs by keywords
-	```
-		python crawl_url.py
-	```
-1. Download imgs from URLs
-	```
-		python crawl_data.py
-	```
-
-### Crawl Videos from Youtube
-1. Get URLs by keywords
-	```
-	python crawl_youtube_link.py
-	```
-1. Download videos from URLs
-	```
-	python crawl_videos.py
-	python crawl_videos.py --metadata --thumbnail # thumbnail and metadata only
-	```
-
-##### To-do
-- [x] Init
-- [x] Multithreading
-- [x] Requiremets
-- [x] Write Guideline
-- [ ] Add parser to save_dirs, chromedriver, etc.
